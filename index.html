@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내 무료 채팅방</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💬 내 무료 채팅방</h1>
+      <div id="user-info"></div>
+    </header>
+    
+    <div id="chat-messages" class="messages"></div>
+    
+    <form id="message-form">
+      <input type="text" id="message-input" placeholder="메시지를 입력하세요..." autocomplete="off">
+      <button type="submit">전송</button>
+    </form>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
